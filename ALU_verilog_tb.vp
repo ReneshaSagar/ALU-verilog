@@ -51,8 +51,11 @@ module ALU_tb;
     // Test execution
     initial begin
 
-        passed = 0;
-        failed = 0;
+    $dumpfile("alu_wave.vcd");
+    $dumpvars(0, ALU_tb);
+
+    passed = 0;
+    failed = 0;
 
         $display("--------------------------------");
         $display("       ALU FUNCTIONAL TEST       ");
